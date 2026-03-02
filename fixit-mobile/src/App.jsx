@@ -1,5 +1,4 @@
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -8,6 +7,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Repairs from "./pages/Repairs";
@@ -38,26 +38,24 @@ function App() {
       smoothWheel: true,
     });
 
-    // expose lenis globally
-    window.lenis = lenis;
-
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
+
     requestAnimationFrame(raf);
 
     return () => {
       lenis.destroy();
-      delete window.lenis;
     };
   }, []);
+
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Navbar />
       <AnimatedRoutes />
-    </Router>
+    </>
   );
 }
 
