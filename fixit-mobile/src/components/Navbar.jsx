@@ -34,7 +34,7 @@ const Navbar = () => {
           to="/"
           className="text-white hover:text-blue-600 font-semibold tracking-wide "
         >
-          <img src="/src/assets/icon.png" className="h-8 w-8 mr-2 inline-block" />Fixit Mobile
+          <img src="./assets/icon.png" className="h-8 w-8 mr-2 inline-block" />Fixit Mobile
         </Link>
 
         {/* Desktop Links */}
@@ -52,7 +52,7 @@ const Navbar = () => {
           </Link>
 
           <a
-            href="https://wa.me/27647254427"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full transition-all duration-300 shadow-md hover:shadow-blue-500/40"

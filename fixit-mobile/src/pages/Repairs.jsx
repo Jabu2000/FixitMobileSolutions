@@ -35,7 +35,7 @@ export default function Repairs() {
           </p>
 
           <a
-            href="https://wa.me/27647254427"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full transition-all duration-300 shadow-md hover:shadow-blue-500/40 font-medium"
@@ -88,7 +88,7 @@ export default function Repairs() {
                 <p className="text-slate-300 mb-6">{service.description}</p>
 
                 <a
-                  href="https://wa.me/27647254427"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 font-medium hover:text-blue-300 transition"
@@ -132,7 +132,7 @@ export default function Repairs() {
           </h2>
 
           <a
-            href="https://wa.me/27647254427"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-all duration-300 shadow-md hover:shadow-blue-500/40 font-medium text-[14px]"

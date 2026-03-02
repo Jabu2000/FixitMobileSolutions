@@ -31,7 +31,7 @@ export default function Home() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
-                href="https://wa.me/27647254427"
+                href=""
                 target="_blank"
                 className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/30"
               >
@@ -55,7 +55,7 @@ export default function Home() {
           {/* RIGHT IMAGE */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="/src/assets/hero.png"
+              src="./assets/hero.png"
               alt="iPhone repair Cape Town"
               className="w-full max-w-md lg:max-w-lg object-contain drop-shadow-2xl"
             />
@@ -148,7 +148,7 @@ export default function Home() {
 
           <div className="mt-8">
             <a
-              href="https://instagram.com/fixitmobliesolution"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 font-semibold hover:text-blue-500 transition"
