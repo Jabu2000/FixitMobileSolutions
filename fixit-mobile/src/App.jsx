@@ -1,8 +1,4 @@
-import {
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
@@ -31,22 +27,25 @@ function AnimatedRoutes() {
   );
 }
 
-function App() {
+const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.05,
       smoothWheel: true,
     });
 
+    // expose lenis globally
+    window.lenis = lenis;
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
 
     return () => {
       lenis.destroy();
+      delete window.lenis;
     };
   }, []);
 
@@ -57,6 +56,6 @@ function App() {
       <AnimatedRoutes />
     </>
   );
-}
+};
 
 export default App;
